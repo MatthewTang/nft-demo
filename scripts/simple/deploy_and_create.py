@@ -1,9 +1,8 @@
-from scripts.helpful_scripts import get_account
+from scripts.helpful_scripts import OPENSEA_URL, get_account
 from brownie import SimpleCollectible
 
 
 sample_token_uri = "https://ipfs.io/ipfs/Qmd9MCGtdVz2miNumBHDbvj8bigSgTwnr4SbyH6DNnpWdt?filename=0-PUG.json"
-OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"  # contract_adress and token id
 
 
 def main():
