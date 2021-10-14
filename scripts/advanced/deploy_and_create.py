@@ -16,6 +16,7 @@ def deploy_create():
         config["networks"][network.show_active()]["keyhash"],
         config["networks"][network.show_active()]["fee"],
         {"from": account},
+        publish_source=config["networks"][network.show_active()]["verify"],
     )
     fund_with_link(advanced_collectible.address)
     creating_tx = advanced_collectible.createCollectible({"from": account})
