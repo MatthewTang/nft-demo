@@ -1,6 +1,5 @@
 import pytest
-from scripts.helpful_scripts import LOCAL_BLOCK_CHAIN, get_account
-from scripts.deploy_and_create import sample_token_uri
+from scripts.helpful_scripts import LOCAL_BLOCK_CHAIN, get_account, sample_token_uri
 from brownie import network, SimpleCollectible
 
 

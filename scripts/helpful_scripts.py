@@ -13,8 +13,15 @@ from web3 import Web3
 NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development"]
 LOCAL_BLOCK_CHAIN = NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS + ["mainnet-fork"]
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"  # contract_adress and token id
+BREED_MAPPING = {0: "PUG", 1: "SHIBA_INU", 2: "ST_BERNARD"}
 
 contract_to_mock = {"link_token": LinkToken, "vrf_coordinator": VRFCoordinatorMock}
+
+sample_token_uri = "https://ipfs.io/ipfs/Qmd9MCGtdVz2miNumBHDbvj8bigSgTwnr4SbyH6DNnpWdt?filename=0-PUG.json"
+
+
+def get_breed(id):
+    return BREED_MAPPING[id]
 
 
 def get_account(index=None, id=None):
